@@ -1085,11 +1085,29 @@ export default {
     public: 'Public',
     exclusiveTooltip: 'Exclusive groups granted to you by an admin',
     publicTooltip: 'Groups open to all users',
+    filters: {
+      platform: 'Platform',
+      allPlatforms: 'All platforms',
+      group: 'Group',
+      allGroups: 'All groups',
+      billingMode: 'Billing',
+      allBillingModes: 'All billing modes',
+      hasPricing: 'Has pricing only',
+      hasTiers: 'Tiered pricing only'
+    },
     columns: {
       name: 'Channel',
       description: 'Description',
       platform: 'Platform',
       groups: 'Your Accessible Groups',
+      model: 'Model',
+      billingMode: 'Billing',
+      inputPrice: 'Input',
+      outputPrice: 'Output',
+      cacheWritePrice: 'Cache W',
+      cacheReadPrice: 'Cache R',
+      perRequestPrice: 'Per Req',
+      tiers: 'Tiers',
       supportedModels: 'Supported Models'
     },
     pricing: {
@@ -1105,7 +1123,8 @@ export default {
       perRequestPrice: 'Per Request',
       intervals: 'Tiered Pricing',
       unitPerMillion: '/ 1M tokens',
-      unitPerRequest: '/ request'
+      unitPerRequest: '/ request',
+      tiersCount: '{count} tiers'
     }
   },
 

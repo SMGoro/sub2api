@@ -1089,11 +1089,29 @@ export default {
     public: '公开',
     exclusiveTooltip: '管理员授权给你的专属分组',
     publicTooltip: '对所有用户公开的分组',
+    filters: {
+      platform: '平台',
+      allPlatforms: '全部平台',
+      group: '分组',
+      allGroups: '全部分组',
+      billingMode: '计费模式',
+      allBillingModes: '全部计费',
+      hasPricing: '仅看有定价',
+      hasTiers: '仅看阶梯定价'
+    },
     columns: {
       name: '渠道名',
       description: '描述',
       platform: '平台',
       groups: '我可访问的分组',
+      model: '模型',
+      billingMode: '计费模式',
+      inputPrice: '输入价',
+      outputPrice: '输出价',
+      cacheWritePrice: '缓存写价',
+      cacheReadPrice: '缓存读价',
+      perRequestPrice: '单次价',
+      tiers: '阶梯定价',
       supportedModels: '支持模型'
     },
     pricing: {
@@ -1109,7 +1127,8 @@ export default {
       perRequestPrice: '每次请求',
       intervals: '阶梯定价',
       unitPerMillion: '/ 1M token',
-      unitPerRequest: '/ 次'
+      unitPerRequest: '/ 次',
+      tiersCount: '{count} 档'
     }
   },
 
